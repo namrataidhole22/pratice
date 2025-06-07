@@ -1,0 +1,5 @@
+com\example\shoppingwebsite\repository\ItemRepository.class
+com\example\shoppingwebsite\model\Item.class
+com\example\shoppingwebsite\ShoppingWebsiteApplication.class
+com\example\shoppingwebsite\controller\ItemController.class
+com\example\shoppingwebsite\service\ItemService.class

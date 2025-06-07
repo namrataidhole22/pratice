@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.search-bar {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.search-bar input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #4cae4c;
+}
+
+.item-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.item-card:hover {
+    transform: scale(1.05);
+}
+
+.item-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item-card h3 {
+    margin: 10px 0;
+}
+
+.item-card p {
+    color: #888;
+}
+
+.item-card .price {
+    font-weight: bold;
+    color: #5cb85c;
+}
+
+.address-selector {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.address-selector select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

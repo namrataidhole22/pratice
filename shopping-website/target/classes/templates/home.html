@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shopping Website</h1>
+        <input type="text" id="search-bar" placeholder="Search for items...">
+        <select id="address-select">
+            <option value="address1">Address 1</option>
+            <option value="address2">Address 2</option>
+            <option value="address3">Address 3</option>
+        </select>
+    </header>
+    <main>
+        <div id="item-cards" th:each="item : ${items}">
+            <div class="item-card" th:onclick="'location.href=\'/item/' + ${item.id} + '\'">
+                <h2 th:text="${item.name}"></h2>
+                <p th:text="'Price: ' + ${item.price}"></p>
+                <p th:text="${item.description}"></p>
+            </div>
+        </div>
+    </main>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
